@@ -1,23 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
+// React.createElement => ReactElement-JS Object => HTMLElement(after render)
 
+// JSX => Babel transpiles it to React.createElement => ReactElement-JS Object => HTMLElement(after render)
 
-//Scenario : Building a react app without using cdn links and importing react and react dom
+const jsxHeading = (
+  <h1 id="heading" className="head">
+    Namaste React🚀
+  </h1>
+);
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "Iam h1"),
-    React.createElement("h2", {}, "Imported React and ReactDom modules"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "Iam h1"),
-    React.createElement("h2", {}, "Iam h2"),
-  ]),
-]);
+// React Functional Component
+const HeadingComponent = () => {
+  return <h1 className="heading">Namaste React Functional Component</h1>;
+};
 
-// const heading = React.createElement("h1", { id : "heading" , xyz : "abc"}, "Hello World From React");
+const HeadingComponent2 = () => (
+  <h1 className="heading">Namaste React Functional Component2</h1>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+
+root.render(<HeadingComponent />);
+
