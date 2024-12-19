@@ -1,14 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 
 
-//Scenario : Creating tags using react and rendering it
+//Scenario : Building a react app without using cdn links and importing react and react dom
 
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child" }, [
     React.createElement("h1", {}, "Iam h1"),
-    React.createElement("h2", {}, "Iam h2"),
+    React.createElement("h2", {}, "Imported React and ReactDom modules"),
   ]),
   React.createElement("div", { id: "child2" }, [
     React.createElement("h1", {}, "Iam h1"),
