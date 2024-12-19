@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
 
 //Scenario : Creating tags using react and rendering it
 
