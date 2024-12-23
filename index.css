@@ -1,75 +1,132 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-.header{
+.header {
 
     display: flex;
     border: 1px solid black;
-    box-shadow : 0 1px;
+    box-shadow: 0 1px;
     justify-content: space-between;
-    
+
 }
 
 
-.logo{
+.logo {
 
     width: 200px;
-    
+
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
     font-size: 18px;
-    
+
 
 }
 
-.nav-items li{
+.nav-items li {
 
     padding: 1em;
     margin-top: 2em;
 }
 
-.filter{
-    
-    font-size: 1.2em;
+.filter {
+
+    /* font-size: 1.2em; */
     padding: 1em;
+    display: flex;
+
 
 }
 
-.res-logo{
+.search-box {
+
+    height: 2em;
+
+
+}
+
+.search-btn {
+
+
+    height: 2em;
+
+
+}
+
+.top-rated {
+
+    height: 2em;
+
+}
+
+.search {
+    margin-right: 20px;
+    height: 2em;
+
+}
+
+.res-logo {
 
     width: 200px;
 
 }
 
-.res-container{
-    
+.res-container {
+
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.res-card{
-    
-    
-    
+.res-card {
+
+
+
     padding: 5px;
     background-color: #d7d5d5;
     margin: 5px;
     border-radius: 5px;
     width: 230px;
-    
+
 }
 
-.res-card:hover{
+.res-card:hover {
     cursor: pointer;
     border: 1px solid black;
 
-    
+
+}
+
+.shimmer-card {
+
+    padding: 5px;
+    background-color: #d7d5d5;
+    margin: 5px;
+    border-radius: 5px;
+    width: 230px;
+    height: 300px;
+}
+
+.shimmer-container {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-button {
+
+    width: 70px;
+    height: 2em;
+    margin-top: 50px;
+
+}
+
+.login-button:hover {
+    cursor: pointer;
 }
