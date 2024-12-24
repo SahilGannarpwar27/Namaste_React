@@ -21,7 +21,7 @@
 
 }
 
-ul {
+.nav-items ul {
     display: flex;
     list-style: none;
     font-size: 18px;
