@@ -1,132 +1,141 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 .header {
-
+    
     display: flex;
-    border: 1px solid black;
-    box-shadow: 0 1px;
     justify-content: space-between;
-
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    
+    
 }
 
-
 .logo {
-
-    width: 200px;
-
+    width: 150px;
+    height: auto;
 }
 
 .nav-items ul {
     display: flex;
     list-style: none;
-    font-size: 18px;
-
-
+    gap: 20px;
+    font-size: 16px;
+    align-items: center;
 }
 
 .nav-items li {
+    padding: 0.5em 1em;
+    transition: color 0.3s, background-color 0.3s;
+    /* text-decoration: none; */
+}
 
-    padding: 1em;
-    margin-top: 2em;
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items li:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #007BFF;
 }
 
 .filter {
-
-    /* font-size: 1.2em; */
-    padding: 1em;
     display: flex;
-
-
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
 }
 
-.search-box {
-
-    height: 2em;
-
-
-}
-
-.search-btn {
-
-
-    height: 2em;
-
-
-}
-
+.search-box,
+.search-btn,
 .top-rated {
-
-    height: 2em;
-
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 .search {
     margin-right: 20px;
-    height: 2em;
-
 }
 
+/* Restaurant Section */
 .res-logo {
-
-    width: 200px;
-
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .res-container {
-
     display: flex;
     flex-wrap: wrap;
-
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
 }
 
 .res-card {
-
-
-
-    padding: 5px;
-    background-color: #d7d5d5;
-    margin: 5px;
-    border-radius: 5px;
-    width: 230px;
-
+    padding: 15px;
+    background-color: #cfcbcb;
+    margin: 10px;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 469px;
+    max-height: 470px;
 }
 
 .res-card:hover {
     cursor: pointer;
-    border: 1px solid black;
-
-
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Shimmer Effect Placeholder */
 .shimmer-card {
-
-    padding: 5px;
-    background-color: #d7d5d5;
-    margin: 5px;
-    border-radius: 5px;
-    width: 230px;
+    padding: 15px;
+    background-color: #e0e0e0;
+    margin: 10px;
+    border-radius: 8px;
+    width: 250px;
     height: 300px;
 }
 
 .shimmer-container {
-
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
 }
 
+/* Login Button */
 .login-button {
-
-    width: 70px;
-    height: 2em;
-    margin-top: 50px;
-
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .login-button:hover {
-    cursor: pointer;
+    background-color: #0056b3;
 }

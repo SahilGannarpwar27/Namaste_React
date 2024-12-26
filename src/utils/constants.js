@@ -4,4 +4,6 @@ export const LOGO_URL = "https://i.fbcd.co/products/original/d32491363c1d52ac365
 
 export const FETCHED_API = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5938173&lng=73.7860735&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
-export const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5938173&lng=73.7860735&restaurantId="
+export const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5938173&lng=73.7860735&restaurantId=";
+
+export const USER_ABOUT_DATA = "https://api.github.com/users/SahilGannarpwar27";
